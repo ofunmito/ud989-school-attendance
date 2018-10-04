@@ -54,9 +54,23 @@ let view = {
     init: function() {
         // grab the table element
         this.tableName = document.getElementsByClassName('name-col');
-        console.log(this.tableName);
-    }
 
+        this.render();
+    },
+
+    render: function() {
+
+        console.log(this.tableName[0])
+
+        for (let i = 0; i <= 11; i++) {
+            th = document.createElement('th');
+            th.innerText = i + 1;
+            this.tableName[0].
+                // console.log(th);
+        }
+        // console.log(this.tableName);
+
+    }
 }
 
 octopus.init();
