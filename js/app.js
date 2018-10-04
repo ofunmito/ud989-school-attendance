@@ -37,6 +37,12 @@ let model = {
 
 let octopus = {
 
+    init: function() {
+
+        view.init();
+
+    }
+
 }
 
 
@@ -45,7 +51,15 @@ let octopus = {
 
 let view = {
 
+    init: function() {
+        // grab the table element
+        this.tableName = document.getElementsByClassName('name-col');
+        console.log(this.tableName);
+    }
+
 }
+
+octopus.init();
 
 
 /* STUDENT APPLICATION */
